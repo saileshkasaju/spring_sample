@@ -9,7 +9,7 @@
       name="customerService"
       class="com.pluralsight.service.CustomerServiceImpl"
       autowire="byName">
-      <property name="customerRepository"
+      <constructor-arg index="0"
         ref="customerRepository" />
     </bean>
 
