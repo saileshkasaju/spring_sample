@@ -12,8 +12,14 @@ import java.util.List;
  */
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
-    @Autowired
+    //@Autowired
     private CustomerRepository customerRepository;
+
+    @Autowired
+    public void setCustomerRepository(CustomerRepository customerRepository) {
+        System.out.println("We are using setter injection");
+        this.customerRepository = customerRepository;
+    }
 
     @Override
     public List<Customer> findAll() {
