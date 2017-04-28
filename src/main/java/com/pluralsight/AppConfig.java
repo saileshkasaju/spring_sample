@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import com.pluralsight.repository.CustomerRepository;
 import com.pluralsight.repository.HibernateCustomerRepositoryImpl;
 import com.pluralsight.service.CustomerService;
