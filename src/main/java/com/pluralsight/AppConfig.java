@@ -20,7 +20,7 @@ public class AppConfig {
 //        CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository());
 
         CustomerServiceImpl service = new CustomerServiceImpl();
-        service.setCustomerRepository(getCustomerRepository());
+//        service.setCustomerRepository(getCustomerRepository());
         return service;
     }
 

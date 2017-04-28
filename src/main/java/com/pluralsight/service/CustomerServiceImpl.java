@@ -2,6 +2,7 @@ package com.pluralsight.service;
 
 import com.pluralsight.model.Customer;
 import com.pluralsight.repository.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  */
 public class CustomerServiceImpl implements CustomerService {
 
+    @Autowired
     private CustomerRepository customerRepository;
 
     public CustomerServiceImpl() {
@@ -19,7 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println("We are using constructor injection");
         this.customerRepository = customerRepository;
     }
-
+    
     public void setCustomerRepository(CustomerRepository customerRepository) {
         System.out.println("We are using setter injection");
         this.customerRepository = customerRepository;
