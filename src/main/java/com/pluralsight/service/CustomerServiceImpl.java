@@ -13,7 +13,7 @@ import java.util.List;
  * Created by Edge on 12/25/2016.
  */
 @Service("customerService")
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepository customerRepository;
